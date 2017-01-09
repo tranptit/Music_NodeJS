@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>EDIT VIDEO MUSIC</title>
+  </head>
+  <body>
+    <form action="../../music/edit" method="post" enctype="multipart/form-data">
+      <input type="hidden" name="txtId" value="<%= row.id %>">
+      <input type="text" name="txtVideoId" value="<%= row.video_id %>"></br>
+      <input type="text" name="txtVideoName" value="<%= row.video_name %>"></br>
+      <input type="text" name="txtVideoDescription" value="<%= row.video_description %>"></br>
+      <input type="file" name="fileThumbnail" value="<%= row.video_thumbnail %>"></br>
+
+      <input type="submit" name="btnEdit" value="Save">
+    </form>
+  </body>
+</html>
